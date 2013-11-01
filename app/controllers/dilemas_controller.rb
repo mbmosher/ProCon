@@ -1,0 +1,2 @@
+class DilemasController < ApplicationController
+end
