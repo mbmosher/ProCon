@@ -1,12 +1,13 @@
 class DilemasController < ApplicationController
 
 def new
-	@post = Post.new
+	@dilema = Dilema.new
 end
 
 def create
 	@dilema = Dilema.new(dilema_params)
  	# @dilema.author = current_user.email
+ 	@dilema.user_id = current_user.id
   if @dilema.save
   	redirect_to @dilema
   else
@@ -16,10 +17,12 @@ end
 
 def show
 	@dilema = Dilema.find(params[:id])
+	@pros
+	@cons
 end
 
 def index
-	@dilemas = Dilema.all
+	@dilemas = Dilema.where(user_id: current_user.id)
 end
 
 def edit

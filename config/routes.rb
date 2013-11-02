@@ -6,11 +6,13 @@ ProCon::Application.routes.draw do
   
   resources :users
   
-  resources :dilemas
+  	resources :dilemas do
   
-  resources :pros
+  		resources :pros
   
-  resources :cons
+  		resources :cons
+  	end
+  
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
