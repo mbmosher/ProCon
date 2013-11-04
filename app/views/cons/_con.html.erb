@@ -1,0 +1,6 @@
+<tr>
+  <td><%= con.name %></td>
+  <td><%= con.value %></td>
+  <td><%= link_to 'Delete', [@dilema, con],
+    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>

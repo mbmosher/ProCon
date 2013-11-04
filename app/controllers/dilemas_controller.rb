@@ -17,8 +17,6 @@ end
 
 def show
 	@dilema = Dilema.find(params[:id])
-	@pros
-	@cons
 end
 
 def index

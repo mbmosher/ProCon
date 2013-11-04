@@ -1,33 +1,29 @@
 <h1><%= @dilema.decision %></h1>
 
-<table class="table table-striped">
-  <tr>
+<div class="row">
+	
+	<div class="span6">
+<table class="table">
+  <tr class="info">
     <th>Pro</th>
     <th>Value</th>
     <th>Edit</th>
   </tr>
-  <% @pros.each do |pro| %>
-    <tr>
-      <td><%= pro.name %></td>
-      <td><%= pro.value %></td>
-      <td><%= link_to 'Delete', pro_path(pro),
-        method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
+  <%= render @dilema.pros %>
 </table>
+<%= render "pros/form" %>
+</div>
 
-<table class="table table-striped">
-  <tr>
+<div class="span6">
+<table class="table">
+  <tr class="info">
     <th>Con</th>
     <th>Value</th>
     <th>Edit</th>
   </tr>
-  <% @cons.each do |con| %>
-    <tr>
-      <td><%= con.name %></td>
-      <td><%= con.value %></td>
-      <td><%= link_to 'Delete', con_path(con),
-        method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
+  <%= render @dilema.cons %>
 </table>
+<%= render "cons/form" %>
+</div>
+</div>
+<%= link_to "Back", dilemas_path, class: 'btn' %>
