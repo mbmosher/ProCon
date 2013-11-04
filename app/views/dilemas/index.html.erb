@@ -16,6 +16,27 @@
   <% end %>
 </table>
 
-<%= link_to "New Dilema", new_dilema_path, class: 'btn' %>
+<%= form_for @dilema do |f| %>
+  <% if @dilema.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@post.errors.count, "error") %> prohibited
+      this post from being saved:</h2>
+    <ul>
+    <% @dilema.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+  
+  <div class="form-inline">
+  
+    <% f.label :decision %>
+    <%= f.text_field :decision %>
+    <%= f.submit "Add New Dilema", class: 'btn' %>
+  
+  </div>
+<% end %>
+
   <%= link_to 'Edit profile', edit_user_registration_path, class: "btn" %> 
   <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "btn"  %>

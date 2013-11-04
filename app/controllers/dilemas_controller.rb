@@ -11,7 +11,7 @@ def create
   if @dilema.save
   	redirect_to @dilema
   else
-  	render 'new'
+  	render 'index'
   end
 end
 
@@ -23,6 +23,7 @@ end
 
 def index
 	@dilemas = Dilema.where(user_id: current_user.id)
+	@dilema = Dilema.new
 end
 
 def edit
