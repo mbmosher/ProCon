@@ -1,8 +1,9 @@
-<h1>Dilemas</h1>
-
+<h1>My Dilemas</h1>
+<br>
 <table class="table table-striped">
   <tr>
-    <th>Title</th>
+    <th>Issue</th>
+	<th>Result</th>
     <th>Edit</th>
     
   </tr>
@@ -10,6 +11,7 @@
   <% @dilemas.each do |dilema| %>
     <tr>
       <td><%= link_to dilema.decision, dilema_path(dilema) %></td>
+	  <td><%= dilema.result %>
       <td><%= link_to 'Delete', dilema_path(dilema),
         method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>

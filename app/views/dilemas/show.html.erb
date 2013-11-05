@@ -1,29 +1,31 @@
-<h1><%= @dilema.decision %></h1>
-
+<h1><%= @dilema.decision %>     <%= @dilema.result %></h1>
+<br>
 <div class="row">
 	
-	<div class="span6">
+<div class="span6">
+	<%= render "pros/form" %>
 <table class="table">
   <tr class="info">
-    <th>Pro</th>
-    <th>Value</th>
+    <th class="span4">Pro</th>
+    <th class="span1"><%= @dilema.pro_total %></th>
     <th>Edit</th>
   </tr>
   <%= render @dilema.pros %>
 </table>
-<%= render "pros/form" %>
+
 </div>
 
 <div class="span6">
+	<%= render "cons/form" %>
 <table class="table">
   <tr class="info">
-    <th>Con</th>
-    <th>Value</th>
+    <th class="span4">Con</th>
+    <th class="span1"><%= @dilema.con_total %></th>
     <th>Edit</th>
   </tr>
   <%= render @dilema.cons %>
 </table>
-<%= render "cons/form" %>
+
 </div>
 </div>
 <%= link_to "Back", dilemas_path, class: 'btn' %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131102044122) do
+ActiveRecord::Schema.define(version: 20131105034249) do
 
   create_table "cons", force: true do |t|
     t.text     "name"
@@ -26,6 +26,9 @@ ActiveRecord::Schema.define(version: 20131102044122) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.integer  "pro_total"
+    t.integer  "con_total"
+    t.string   "result"
   end
 
   create_table "pros", force: true do |t|
