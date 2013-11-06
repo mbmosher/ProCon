@@ -13734,3 +13734,1883 @@ Processing by DilemasController#index as HTML
   [1m[36mDilema Load (0.3ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1[0m
   Rendered dilemas/index.html.erb within layouts/application (4.7ms)
 Completed 200 OK in 63ms (Views: 12.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dilemas/6" for 127.0.0.1 at 2013-11-04 21:31:39 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  Rendered pros/_form.html.erb (2.1ms)
+  [1m[36mPro Load (0.1ms)[0m  [1mSELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?[0m  [["dilema_id", 6]]
+  Rendered pros/_pro.html.erb (0.6ms)
+  Rendered cons/_form.html.erb (1.7ms)
+  [1m[35mCon Load (0.1ms)[0m  SELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?  [["dilema_id", 6]]
+  Rendered cons/_con.html.erb (0.4ms)
+  Rendered dilemas/show.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-04 21:31:42 -0700
+Processing by DilemasController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1
+  Rendered dilemas/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-04 21:32:01 -0700
+Processing by DilemasController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1
+  Rendered dilemas/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 21:32:02 -0700
+
+
+Started GET "/dilemas/6" for 127.0.0.1 at 2013-11-05 07:41:45 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDilema Load (0.2ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered pros/_form.html.erb (4.1ms)
+  [1m[35mPro Load (0.2ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 6]]
+  Rendered pros/_pro.html.erb (0.9ms)
+  Rendered cons/_form.html.erb (2.3ms)
+  [1m[36mCon Load (0.1ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 6]]
+  Rendered cons/_con.html.erb (0.6ms)
+  Rendered dilemas/show.html.erb within layouts/application (56.4ms)
+Completed 200 OK in 117ms (Views: 113.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-05 07:42:48 -0700
+Processing by DilemasController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDilema Load (0.3ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1[0m
+  Rendered dilemas/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 77ms (Views: 74.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-05 16:17:49 -0700
+Processing by DilemasController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant Devise::Controllers::Helpers::DeviseController):
+  devise (3.1.1) lib/devise/controllers/helpers.rb:80:in `devise_controller?'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:403:in `_run__2226808250532096194__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__4303429097326579730__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Volumes/RINZLER/matthewmosher/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Volumes/RINZLER/matthewmosher/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Volumes/RINZLER/matthewmosher/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:17:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DilemasController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDilema Load (10.5ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1[0m
+  Rendered dilemas/index.html.erb within layouts/application (114.8ms)
+Completed 200 OK in 481ms (Views: 359.9ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:17:02 -0700
+
+
+Started GET "/dilemas/6" for 127.0.0.1 at 2013-11-06 00:17:07 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mDilema Load (0.2ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "6"]]
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (comparison of String with 0 failed):
+  app/controllers/dilemas_controller.rb:24:in `>'
+  app/controllers/dilemas_controller.rb:24:in `show'
+
+
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.2ms)
+
+
+Started GET "/dilemas/6" for 127.0.0.1 at 2013-11-06 00:17:07 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "6"]]
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (comparison of String with 0 failed):
+  app/controllers/dilemas_controller.rb:24:in `>'
+  app/controllers/dilemas_controller.rb:24:in `show'
+
+
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started DELETE "/dilemas/6" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+Processing by DilemasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "id"=>"6"}
+  [1m[35mDilema Load (0.5ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mPro Load (13.0ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 6]]
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "pros" WHERE "pros"."id" = ?[0m  [["id", 6]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "pros" WHERE "pros"."id" = ?  [["id", 7]]
+  [1m[36mCon Load (0.1ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 6]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "cons" WHERE "cons"."id" = ?  [["id", 4]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "dilemas" WHERE "dilemas"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/dilemas
+Completed 302 Found in 91ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+Processing by DilemasController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1
+  Rendered dilemas/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:07 -0700
+
+
+Started DELETE "/dilemas/5" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+Processing by DilemasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "id"=>"5"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mPro Load (0.1ms)[0m  [1mSELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?[0m  [["dilema_id", 5]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "pros" WHERE "pros"."id" = ?  [["id", 5]]
+  [1m[36mCon Load (0.1ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 5]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "cons" WHERE "cons"."id" = ?  [["id", 3]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "cons" WHERE "cons"."id" = ?[0m  [["id", 5]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "dilemas" WHERE "dilemas"."id" = ?  [["id", 5]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/dilemas
+Completed 302 Found in 7ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+Processing by DilemasController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1[0m
+  Rendered dilemas/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:18:10 -0700
+
+
+Started POST "/dilemas" for 127.0.0.1 at 2013-11-06 00:18:20 -0700
+Processing by DilemasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "dilema"=>{"decision"=>"Should I get a pizza?"}, "commit"=>"Add New Dilema"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "dilemas" ("con_total", "created_at", "decision", "pro_total", "result", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["con_total", 0], ["created_at", Wed, 06 Nov 2013 07:18:20 UTC +00:00], ["decision", "Should I get a pizza?"], ["pro_total", 0], ["result", "???"], ["updated_at", Wed, 06 Nov 2013 07:18:20 UTC +00:00], ["user_id", 1]]
+  [1m[36m (36.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/dilemas/3
+Completed 302 Found in 43ms (ActiveRecord: 37.8ms)
+
+
+Started GET "/dilemas/3" for 127.0.0.1 at 2013-11-06 00:18:20 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "3"]]
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (comparison of String with 0 failed):
+  app/controllers/dilemas_controller.rb:24:in `>'
+  app/controllers/dilemas_controller.rb:24:in `show'
+
+
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:18:48 -0700
+Processing by DilemasController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1
+  Rendered dilemas/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/dilemas/3" for 127.0.0.1 at 2013-11-06 00:19:05 -0700
+Processing by DilemasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "id"=>"3"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mPro Load (0.1ms)[0m  [1mSELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?[0m  [["dilema_id", 3]]
+  [1m[35mCon Load (0.1ms)[0m  SELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?  [["dilema_id", 3]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "dilemas" WHERE "dilemas"."id" = ?[0m  [["id", 3]]
+  [1m[35m (16.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/dilemas
+Completed 302 Found in 50ms (ActiveRecord: 17.9ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+Processing by DilemasController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1
+  Rendered dilemas/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 40ms (Views: 9.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:06 -0700
+
+
+Started POST "/dilemas" for 127.0.0.1 at 2013-11-06 00:19:10 -0700
+Processing by DilemasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "dilema"=>{"decision"=>"Should I get a pizza?"}, "commit"=>"Add New Dilema"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "dilemas" ("con_total", "created_at", "decision", "pro_total", "result", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["con_total", 0], ["created_at", Wed, 06 Nov 2013 07:19:11 UTC +00:00], ["decision", "Should I get a pizza?"], ["pro_total", 0], ["result", 0], ["updated_at", Wed, 06 Nov 2013 07:19:11 UTC +00:00], ["user_id", 1]]
+  [1m[35m (19.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/dilemas/3
+Completed 302 Found in 26ms (ActiveRecord: 20.6ms)
+
+
+Started GET "/dilemas/3" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered pros/_form.html.erb (17.0ms)
+  [1m[35mPro Load (0.1ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 3]]
+  Rendered pros/_pro.html.erb (2.3ms)
+  Rendered cons/_form.html.erb (23.4ms)
+  [1m[36mCon Load (0.1ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 3]]
+  Rendered cons/_con.html.erb (1.7ms)
+  Rendered dilemas/show.html.erb within layouts/application (134.0ms)
+Completed 200 OK in 171ms (Views: 168.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:19:11 -0700
+
+
+Started POST "/dilemas/3/pros" for 127.0.0.1 at 2013-11-06 00:19:21 -0700
+Processing by ProsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "pro"=>{"name"=>"It's tasty!", "value"=>"1"}, "commit"=>"Add Pro", "dilema_id"=>"3"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "3"]]
+Completed 500 Internal Server Error in 38ms
+
+NameError (undefined local variable or method `pro' for #<ProsController:0x007fd3ad7a6df8>):
+  app/controllers/pros_controller.rb:6:in `create'
+
+
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+
+
+Started POST "/dilemas/3/pros" for 127.0.0.1 at 2013-11-06 00:19:58 -0700
+Processing by ProsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "pro"=>{"name"=>"It's really tasty", "value"=>"1"}, "commit"=>"Add Pro", "dilema_id"=>"3"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 77ms
+
+NoMethodError (undefined method `addPro' for #<Dilema:0x007fd3a91afe08>):
+  app/controllers/pros_controller.rb:6:in `create'
+
+
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started POST "/dilemas/3/pros" for 127.0.0.1 at 2013-11-06 00:26:20 -0700
+Processing by ProsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "pro"=>{"name"=>"It's really tasty", "value"=>"1"}, "commit"=>"Add Pro", "dilema_id"=>"3"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "3"]]
+Completed 500 Internal Server Error in 71ms
+
+NoMethodError (undefined method `pro_total' for nil:NilClass):
+  app/models/dilema.rb:10:in `addPro'
+  app/controllers/pros_controller.rb:6:in `create'
+
+
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+
+
+Started POST "/dilemas/3/pros" for 127.0.0.1 at 2013-11-06 00:27:23 -0700
+Processing by ProsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "pro"=>{"name"=>"It's really tasty", "value"=>"1"}, "commit"=>"Add Pro", "dilema_id"=>"3"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 40ms
+
+NoMethodError (undefined method `pro_total' for nil:NilClass):
+  app/models/dilema.rb:11:in `addPro'
+  app/controllers/pros_controller.rb:6:in `create'
+
+
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started POST "/dilemas/3/pros" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+Processing by ProsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "pro"=>{"name"=>"It's really tasty", "value"=>"1"}, "commit"=>"Add Pro", "dilema_id"=>"3"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "dilemas" SET "pro_total" = ?, "result" = ?, "updated_at" = ? WHERE "dilemas"."id" = 3  [["pro_total", 1], ["result", 1], ["updated_at", Wed, 06 Nov 2013 07:27:50 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "pros" ("created_at", "dilema_id", "name", "updated_at", "value") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Wed, 06 Nov 2013 07:27:50 UTC +00:00], ["dilema_id", 3], ["name", "It's really tasty"], ["updated_at", Wed, 06 Nov 2013 07:27:50 UTC +00:00], ["value", 1]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/dilemas/3
+Completed 302 Found in 49ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/dilemas/3" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered pros/_form.html.erb (3.0ms)
+  [1m[35mPro Load (0.2ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 3]]
+  Rendered pros/_pro.html.erb (0.7ms)
+  Rendered cons/_form.html.erb (18.1ms)
+  [1m[36mCon Load (0.2ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 3]]
+  Rendered cons/_con.html.erb (0.5ms)
+  Rendered dilemas/show.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 70ms (Views: 67.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:27:50 -0700
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:27:54 -0700
+Processing by DilemasController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDilema Load (0.2ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1[0m
+  Rendered dilemas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 42ms (Views: 10.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dilemas/3" for 127.0.0.1 at 2013-11-06 00:27:56 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered pros/_form.html.erb (2.8ms)
+  [1m[36mPro Load (0.1ms)[0m  [1mSELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?[0m  [["dilema_id", 3]]
+  Rendered pros/_pro.html.erb (0.9ms)
+  Rendered cons/_form.html.erb (2.4ms)
+  [1m[35mCon Load (0.1ms)[0m  SELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?  [["dilema_id", 3]]
+  Rendered cons/_con.html.erb (0.6ms)
+  Rendered dilemas/show.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/dilemas/3/pros" for 127.0.0.1 at 2013-11-06 00:32:56 -0700
+Processing by ProsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "pro"=>{"name"=>"I'm hungry...", "value"=>"3"}, "commit"=>"Add Pro", "dilema_id"=>"3"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 38ms
+
+NoMethodError (undefined method `+' for nil:NilClass):
+  app/models/dilema.rb:10:in `addPro'
+  app/controllers/pros_controller.rb:6:in `create'
+
+
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started POST "/dilemas/3/pros" for 127.0.0.1 at 2013-11-06 00:33:57 -0700
+Processing by ProsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "pro"=>{"name"=>"I'm hungry...", "value"=>"3"}, "commit"=>"Add Pro", "dilema_id"=>"3"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "dilemas" SET "pro_total" = ?, "result" = ?, "updated_at" = ? WHERE "dilemas"."id" = 3  [["pro_total", 4], ["result", 4], ["updated_at", Wed, 06 Nov 2013 07:33:57 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "pros" ("created_at", "dilema_id", "name", "updated_at", "value") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Wed, 06 Nov 2013 07:33:57 UTC +00:00], ["dilema_id", 3], ["name", "I'm hungry..."], ["updated_at", Wed, 06 Nov 2013 07:33:57 UTC +00:00], ["value", 3]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/dilemas/3
+Completed 302 Found in 48ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/dilemas/3" for 127.0.0.1 at 2013-11-06 00:33:57 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered pros/_form.html.erb (2.7ms)
+  [1m[35mPro Load (0.2ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 3]]
+  Rendered pros/_pro.html.erb (0.8ms)
+  Rendered cons/_form.html.erb (16.3ms)
+  [1m[36mCon Load (0.2ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 3]]
+  Rendered cons/_con.html.erb (0.4ms)
+  Rendered dilemas/show.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:33:58 -0700
+
+
+Started POST "/dilemas/3/cons" for 127.0.0.1 at 2013-11-06 00:34:10 -0700
+Processing by ConsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "con"=>{"name"=>"I'm broke", "value"=>"2"}, "commit"=>"Add Con", "dilema_id"=>"3"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "dilemas" SET "con_total" = ?, "result" = ?, "updated_at" = ? WHERE "dilemas"."id" = 3  [["con_total", 2], ["result", 2], ["updated_at", Wed, 06 Nov 2013 07:34:10 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "cons" ("created_at", "dilema_id", "name", "updated_at", "value") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Wed, 06 Nov 2013 07:34:10 UTC +00:00], ["dilema_id", 3], ["name", "I'm broke"], ["updated_at", Wed, 06 Nov 2013 07:34:10 UTC +00:00], ["value", 2]]
+  [1m[35m (29.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/dilemas/3
+Completed 302 Found in 36ms (ActiveRecord: 30.0ms)
+
+
+Started GET "/dilemas/3" for 127.0.0.1 at 2013-11-06 00:34:10 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered pros/_form.html.erb (2.4ms)
+  [1m[35mPro Load (0.1ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 3]]
+  Rendered pros/_pro.html.erb (0.7ms)
+  Rendered cons/_form.html.erb (1.9ms)
+  [1m[36mCon Load (0.1ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 3]]
+  Rendered cons/_con.html.erb (0.6ms)
+  Rendered dilemas/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:11 -0700
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:34:15 -0700
+Processing by DilemasController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDilema Load (0.2ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1[0m
+  Rendered dilemas/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 9.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+Processing by DilemasController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1[0m
+  Rendered dilemas/index.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:34:21 -0700
+
+
+Started POST "/dilemas" for 127.0.0.1 at 2013-11-06 00:36:58 -0700
+Processing by DilemasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "dilema"=>{"decision"=>""}, "commit"=>"Add New Dilema"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered dilemas/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 91ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:     
+     9:   </tr>
+    10:  
+    11:   <% @dilemas.each do |dilema| %>
+    12:     <tr>
+    13:       <td><%= link_to dilema.decision, dilema_path(dilema) %></td>
+    14: 	  <td><%= @resultPrefix %> <%= dilema.result %></td>
+  app/views/dilemas/index.html.erb:11:in `_app_views_dilemas_index_html_erb___2453528554108623498_70273560119560'
+  app/controllers/dilemas_controller.rb:17:in `create'
+
+
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.2ms)
+
+
+Started POST "/dilemas" for 127.0.0.1 at 2013-11-06 00:38:00 -0700
+Processing by DilemasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "dilema"=>{"decision"=>""}, "commit"=>"Add New Dilema"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered dilemas/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    21:     
+    22:   </tr>
+    23:  
+    24:   <% @dilemas.each do |dilema| %>
+    25:     <tr>
+    26:       <td><%= link_to dilema.decision, dilema_path(dilema) %></td>
+    27: 	  <td><%= @resultPrefix %> <%= dilema.result %></td>
+  app/views/dilemas/index.html.erb:24:in `_app_views_dilemas_index_html_erb___2453528554108623498_70273561330840'
+  app/controllers/dilemas_controller.rb:17:in `create'
+
+
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+Processing by DilemasController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1[0m
+  Rendered dilemas/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:38:18 -0700
+
+
+Started POST "/dilemas" for 127.0.0.1 at 2013-11-06 00:38:21 -0700
+Processing by DilemasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "dilema"=>{"decision"=>""}, "commit"=>"Add New Dilema"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered dilemas/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    21:     
+    22:   </tr>
+    23:  
+    24:   <% @dilemas.each do |dilema| %>
+    25:     <tr>
+    26:       <td><%= link_to dilema.decision, dilema_path(dilema) %></td>
+    27: 	  <td><%= @resultPrefix %> <%= dilema.result %></td>
+  app/views/dilemas/index.html.erb:24:in `_app_views_dilemas_index_html_erb___2453528554108623498_70273561330840'
+  app/controllers/dilemas_controller.rb:17:in `create'
+
+
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Volumes/RINZLER/matthewmosher/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/dilemas/3" for 127.0.0.1 at 2013-11-06 00:39:28 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDilema Load (0.2ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered pros/_form.html.erb (17.0ms)
+  [1m[35mPro Load (0.2ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 3]]
+  Rendered pros/_pro.html.erb (2.0ms)
+  Rendered cons/_form.html.erb (22.5ms)
+  [1m[36mCon Load (0.2ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 3]]
+  Rendered cons/_con.html.erb (0.6ms)
+  Rendered dilemas/show.html.erb within layouts/application (48.1ms)
+Completed 200 OK in 56ms (Views: 54.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dilemas/3" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered pros/_form.html.erb (2.7ms)
+  [1m[36mPro Load (0.1ms)[0m  [1mSELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?[0m  [["dilema_id", 3]]
+  Rendered pros/_pro.html.erb (0.8ms)
+  Rendered cons/_form.html.erb (1.9ms)
+  [1m[35mCon Load (0.1ms)[0m  SELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?  [["dilema_id", 3]]
+  Rendered cons/_con.html.erb (0.4ms)
+  Rendered dilemas/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:40:16 -0700
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:45:09 -0700
+Processing by DilemasController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1
+  Rendered dilemas/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 99ms (Views: 59.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dilemas/3" for 127.0.0.1 at 2013-11-06 00:45:27 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDilema Load (0.2ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered pros/_form.html.erb (16.6ms)
+  [1m[35mPro Load (0.2ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 3]]
+  Rendered pros/_pro.html.erb (0.8ms)
+  Rendered cons/_form.html.erb (16.8ms)
+  [1m[36mCon Load (0.2ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 3]]
+  Rendered cons/_con.html.erb (0.6ms)
+  Rendered dilemas/show.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:45:49 -0700
+Processing by DilemasController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1[0m
+  Rendered dilemas/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/dilemas" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+Processing by DilemasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "dilema"=>{"decision"=>"Should I get a hair cut?"}, "commit"=>"Add New Dilema"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "dilemas" ("con_total", "created_at", "decision", "pro_total", "result", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["con_total", 0], ["created_at", Wed, 06 Nov 2013 07:46:05 UTC +00:00], ["decision", "Should I get a hair cut?"], ["pro_total", 0], ["result", 0], ["updated_at", Wed, 06 Nov 2013 07:46:05 UTC +00:00], ["user_id", 1]]
+  [1m[36m (31.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/dilemas/4
+Completed 302 Found in 37ms (ActiveRecord: 32.1ms)
+
+
+Started GET "/dilemas/4" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered pros/_form.html.erb (2.7ms)
+  [1m[36mPro Load (0.1ms)[0m  [1mSELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?[0m  [["dilema_id", 4]]
+  Rendered pros/_pro.html.erb (0.4ms)
+  Rendered cons/_form.html.erb (2.0ms)
+  [1m[35mCon Load (0.1ms)[0m  SELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?  [["dilema_id", 4]]
+  Rendered cons/_con.html.erb (0.3ms)
+  Rendered dilemas/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:05 -0700
+
+
+Started POST "/dilemas/4/pros" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+Processing by ProsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "pro"=>{"name"=>"Sides are too long!", "value"=>"2"}, "commit"=>"Add Pro", "dilema_id"=>"4"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "dilemas" SET "pro_total" = ?, "result" = ?, "updated_at" = ? WHERE "dilemas"."id" = 4[0m  [["pro_total", 2], ["result", 2], ["updated_at", Wed, 06 Nov 2013 07:46:23 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "pros" ("created_at", "dilema_id", "name", "updated_at", "value") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 06 Nov 2013 07:46:23 UTC +00:00], ["dilema_id", 4], ["name", "Sides are too long!"], ["updated_at", Wed, 06 Nov 2013 07:46:23 UTC +00:00], ["value", 2]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/dilemas/4
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/dilemas/4" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered pros/_form.html.erb (2.7ms)
+  [1m[36mPro Load (0.1ms)[0m  [1mSELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?[0m  [["dilema_id", 4]]
+  Rendered pros/_pro.html.erb (0.6ms)
+  Rendered cons/_form.html.erb (3.7ms)
+  [1m[35mCon Load (0.1ms)[0m  SELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?  [["dilema_id", 4]]
+  Rendered cons/_con.html.erb (0.4ms)
+  Rendered dilemas/show.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:23 -0700
+
+
+Started POST "/dilemas/4/cons" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+Processing by ConsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "con"=>{"name"=>"Back is too short!", "value"=>"1"}, "commit"=>"Add Con", "dilema_id"=>"4"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "dilemas" SET "con_total" = ?, "result" = ?, "updated_at" = ? WHERE "dilemas"."id" = 4[0m  [["con_total", 1], ["result", 1], ["updated_at", Wed, 06 Nov 2013 07:46:32 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "cons" ("created_at", "dilema_id", "name", "updated_at", "value") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 06 Nov 2013 07:46:32 UTC +00:00], ["dilema_id", 4], ["name", "Back is too short!"], ["updated_at", Wed, 06 Nov 2013 07:46:32 UTC +00:00], ["value", 1]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/dilemas/4
+Completed 302 Found in 9ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/dilemas/4" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered pros/_form.html.erb (2.6ms)
+  [1m[36mPro Load (0.1ms)[0m  [1mSELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?[0m  [["dilema_id", 4]]
+  Rendered pros/_pro.html.erb (0.5ms)
+  Rendered cons/_form.html.erb (2.1ms)
+  [1m[35mCon Load (0.1ms)[0m  SELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?  [["dilema_id", 4]]
+  Rendered cons/_con.html.erb (0.5ms)
+  Rendered dilemas/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:32 -0700
+
+
+Started POST "/dilemas/4/cons" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+Processing by ConsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "con"=>{"name"=>"I'm really broke after getting that pizza", "value"=>"2"}, "commit"=>"Add Con", "dilema_id"=>"4"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "dilemas" SET "con_total" = ?, "result" = ?, "updated_at" = ? WHERE "dilemas"."id" = 4[0m  [["con_total", 3], ["result", -1], ["updated_at", Wed, 06 Nov 2013 07:46:46 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cons" ("created_at", "dilema_id", "name", "updated_at", "value") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 06 Nov 2013 07:46:46 UTC +00:00], ["dilema_id", 4], ["name", "I'm really broke after getting that pizza"], ["updated_at", Wed, 06 Nov 2013 07:46:46 UTC +00:00], ["value", 2]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/dilemas/4
+Completed 302 Found in 7ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/dilemas/4" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered pros/_form.html.erb (2.4ms)
+  [1m[36mPro Load (0.1ms)[0m  [1mSELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?[0m  [["dilema_id", 4]]
+  Rendered pros/_pro.html.erb (0.5ms)
+  Rendered cons/_form.html.erb (1.7ms)
+  [1m[35mCon Load (0.1ms)[0m  SELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?  [["dilema_id", 4]]
+  Rendered cons/_con.html.erb (0.6ms)
+  Rendered dilemas/show.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:46:46 -0700
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:46:49 -0700
+Processing by DilemasController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1
+  Rendered dilemas/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dilemas/3" for 127.0.0.1 at 2013-11-06 00:47:15 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered pros/_form.html.erb (2.7ms)
+  [1m[35mPro Load (0.1ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 3]]
+  Rendered pros/_pro.html.erb (0.7ms)
+  Rendered cons/_form.html.erb (1.7ms)
+  [1m[36mCon Load (0.1ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 3]]
+  Rendered cons/_con.html.erb (0.4ms)
+  Rendered dilemas/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dilemas/4" for 127.0.0.1 at 2013-11-06 00:47:18 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered pros/_form.html.erb (2.0ms)
+  [1m[36mPro Load (0.1ms)[0m  [1mSELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?[0m  [["dilema_id", 4]]
+  Rendered pros/_pro.html.erb (0.4ms)
+  Rendered cons/_form.html.erb (1.6ms)
+  [1m[35mCon Load (0.1ms)[0m  SELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?  [["dilema_id", 4]]
+  Rendered cons/_con.html.erb (0.6ms)
+  Rendered dilemas/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+Processing by DilemasController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1
+  Rendered dilemas/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:47:46 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:47:47 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:47:47 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:47:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:47:47 -0700
+
+
+Started GET "/dilemas/4" for 127.0.0.1 at 2013-11-06 00:49:06 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered pros/_form.html.erb (2.2ms)
+  [1m[35mPro Load (0.1ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 4]]
+  Rendered pros/_pro.html.erb (0.5ms)
+  Rendered cons/_form.html.erb (1.8ms)
+  [1m[36mCon Load (0.1ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 4]]
+  Rendered cons/_con.html.erb (0.6ms)
+  Rendered dilemas/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/dilemas/4/cons" for 127.0.0.1 at 2013-11-06 00:49:08 -0700
+Processing by ConsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "con"=>{"name"=>"", "value"=>"1"}, "commit"=>"Add Con", "dilema_id"=>"4"}
+  [1m[35mDilema Load (0.2ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/dilemas/4
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/dilemas/4" for 127.0.0.1 at 2013-11-06 00:49:08 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered pros/_form.html.erb (3.4ms)
+  [1m[35mPro Load (0.2ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 4]]
+  Rendered pros/_pro.html.erb (0.8ms)
+  Rendered cons/_form.html.erb (2.8ms)
+  [1m[36mCon Load (0.1ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 4]]
+  Rendered cons/_con.html.erb (0.7ms)
+  Rendered dilemas/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:08 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:08 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:08 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:08 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:08 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:08 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:09 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:09 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:09 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:09 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:09 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:09 -0700
+
+
+Started POST "/dilemas/4/cons" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+Processing by ConsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "con"=>{"name"=>"", "value"=>"1"}, "commit"=>"Add Con", "dilema_id"=>"4"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Redirected to http://localhost:3000/dilemas/4
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/dilemas/4" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered pros/_form.html.erb (2.1ms)
+  [1m[35mPro Load (0.1ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 4]]
+  Rendered pros/_pro.html.erb (0.5ms)
+  Rendered cons/_form.html.erb (2.1ms)
+  [1m[36mCon Load (0.1ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 4]]
+  Rendered cons/_con.html.erb (0.7ms)
+  Rendered dilemas/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 49ms (Views: 47.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:11 -0700
+
+
+Started POST "/dilemas/4/cons" for 127.0.0.1 at 2013-11-06 00:49:15 -0700
+Processing by ConsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC1tio6DcYpRCzqHX9JKnij2p3bCKWbIe8cnG0x8hMY=", "con"=>{"name"=>"", "value"=>"1"}, "commit"=>"Add Con", "dilema_id"=>"4"}
+  [1m[35mDilema Load (0.2ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Redirected to http://localhost:3000/dilemas/4
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/dilemas/4" for 127.0.0.1 at 2013-11-06 00:49:15 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered pros/_form.html.erb (2.3ms)
+  [1m[35mPro Load (0.1ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 4]]
+  Rendered pros/_pro.html.erb (0.5ms)
+  Rendered cons/_form.html.erb (1.8ms)
+  [1m[36mCon Load (0.1ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 4]]
+  Rendered cons/_con.html.erb (0.9ms)
+  Rendered dilemas/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:15 -0700
+
+
+Started GET "/assets/cons.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:15 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/pros.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/dilemas.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/cons.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/dilemas.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/pros.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-06 00:49:16 -0700
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 00:50:41 -0700
+Processing by DilemasController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1[0m
+  Rendered dilemas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dilemas/4" for 127.0.0.1 at 2013-11-06 00:51:22 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mDilema Load (0.1ms)[0m  SELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered pros/_form.html.erb (2.3ms)
+  [1m[36mPro Load (0.1ms)[0m  [1mSELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?[0m  [["dilema_id", 4]]
+  Rendered pros/_pro.html.erb (0.5ms)
+  Rendered cons/_form.html.erb (1.7ms)
+  [1m[35mCon Load (0.1ms)[0m  SELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?  [["dilema_id", 4]]
+  Rendered cons/_con.html.erb (0.7ms)
+  Rendered dilemas/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.3ms)

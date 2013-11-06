@@ -1,5 +1,18 @@
-<h1>My Dilemas</h1>
+<h1>My Dilemmas</h1>
 <br>
+
+  <% if @dilema.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@dilema.errors.count, "error") %> prohibited
+      this dilema from being saved:</h2>
+    <ul>
+    <% @dilema.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
 <table class="table table-striped">
   <tr>
     <th>Issue</th>
@@ -11,7 +24,7 @@
   <% @dilemas.each do |dilema| %>
     <tr>
       <td><%= link_to dilema.decision, dilema_path(dilema) %></td>
-	  <td><%= dilema.result %>
+	  <td><%= dilema.resultPrefix %> <%= dilema.result.abs %></td>
       <td><%= link_to 'Delete', dilema_path(dilema),
         method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
@@ -19,24 +32,11 @@
 </table>
 
 <%= form_for @dilema do |f| %>
-  <% if @dilema.errors.any? %>
-  <div id="errorExplanation">
-    <h2><%= pluralize(@post.errors.count, "error") %> prohibited
-      this post from being saved:</h2>
-    <ul>
-    <% @dilema.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
-  </div>
-  <% end %>
   
   <div class="form-inline">
-  
     <% f.label :decision %>
     <%= f.text_field :decision, placeholder: "Decision?"%>
     <%= f.submit "Add New Dilema", class: 'btn' %>
-  
   </div>
 <% end %>
 

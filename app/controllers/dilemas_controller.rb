@@ -10,7 +10,7 @@ def create
  	@dilema.user_id = current_user.id
  	@dilema.pro_total = 0
  	@dilema.con_total = 0
- 	@dilema.result = '???'
+ 	@dilema.result = 0
   if @dilema.save
   	redirect_to @dilema
   else
@@ -20,17 +20,15 @@ end
 
 def show
 	@dilema = Dilema.find(params[:id])
-	result = @dilema.pro_total - @dilema.con_total
-	if result > 0
-	  @dilema.result = "PRO " + result.to_s
+	if @dilema.result > 0
+	  @resultPrefix = "PRO "
   end
-  if result < 0
-    @dilema.result = "CON " + result.abs.to_s
+  if @dilema.result < 0
+    @resultPrefix = "CON "
   end
-  if result == 0
-    @dilema.result = "??? 0"
+  if @dilema.result == 0
+    @resultPrefix = "??? "
   end
-  @dilema.save
 end
 
 def index
