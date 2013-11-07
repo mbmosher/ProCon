@@ -15614,3 +15614,25 @@ Processing by DilemasController#show as HTML
   Rendered cons/_con.html.erb (0.7ms)
   Rendered dilemas/show.html.erb within layouts/application (9.1ms)
 Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dilemas/4" for 127.0.0.1 at 2013-11-06 11:11:45 -0700
+Processing by DilemasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered pros/_form.html.erb (2.4ms)
+  [1m[35mPro Load (0.1ms)[0m  SELECT "pros".* FROM "pros" WHERE "pros"."dilema_id" = ?  [["dilema_id", 4]]
+  Rendered pros/_pro.html.erb (0.5ms)
+  Rendered cons/_form.html.erb (1.7ms)
+  [1m[36mCon Load (0.1ms)[0m  [1mSELECT "cons".* FROM "cons" WHERE "cons"."dilema_id" = ?[0m  [["dilema_id", 4]]
+  Rendered cons/_con.html.erb (0.7ms)
+  Rendered dilemas/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dilemas" for 127.0.0.1 at 2013-11-06 11:11:57 -0700
+Processing by DilemasController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDilema Load (0.1ms)[0m  [1mSELECT "dilemas".* FROM "dilemas" WHERE "dilemas"."user_id" = 1[0m
+  Rendered dilemas/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.3ms)
