@@ -10,7 +10,9 @@
     <th class="span1"><%= @dilema.pro_total %></th>
     <th>Edit</th>
   </tr>
-  <%= render @dilema.pros %>
+  <% @dilema.pros.each do |pro| %>
+	<%= render partial: "pros/pro", locals: { pro: pro } unless pro.name.nil? or pro.name.empty? %>
+  <% end %>
 </table>
 
 </div>
@@ -23,7 +25,9 @@
     <th class="span1"><%= @dilema.con_total %></th>
     <th>Edit</th>
   </tr>
-  <%= render @dilema.cons %>
+  <% @dilema.cons.each do |con| %>
+	<%= render partial: "cons/con", locals: { con: con } unless con.name.nil? or con.name.empty? %>
+  <% end %>
 </table>
 
 </div>

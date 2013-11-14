@@ -14,21 +14,14 @@ def create
   if @dilema.save
   	redirect_to @dilema
   else
-  	render 'index'
+  	# render 'index'
+  	redirect_to dilemas_path
   end
 end
 
 def show
 	@dilema = Dilema.find(params[:id])
-	if @dilema.result > 0
-	  @resultPrefix = "PRO "
-  end
-  if @dilema.result < 0
-    @resultPrefix = "CON "
-  end
-  if @dilema.result == 0
-    @resultPrefix = "??? "
-  end
+  @resultPrefix = @dilema.resultPrefix
 end
 
 def index
