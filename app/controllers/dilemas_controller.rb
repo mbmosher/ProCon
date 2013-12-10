@@ -25,7 +25,7 @@ def show
 end
 
 def index
-	@dilemas = Dilema.where(user_id: current_user.id)
+	@dilemas = current_user.dilemas
 	@dilema = Dilema.new
 end
 
