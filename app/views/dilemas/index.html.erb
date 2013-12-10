@@ -1,4 +1,5 @@
-<h1>My Dilemmas</h1>
+<br>
+<h1 class="text-center">My Dilemmas</h1>
 <br>
 
   <% if @dilema.errors.any? %>
@@ -24,7 +25,14 @@
   <% @dilemas.each do |dilema| %>
     <tr>
       <td><%= link_to dilema.decision, dilema_path(dilema) %></td>
-	  <td><%= dilema.resultPrefix %> <%= dilema.result.abs %></td>
+	  <td><% if dilema.result > 0 %>
+			 	<span class="label label-success">
+		  <% else %>
+				 	<span class="label label-important">
+		  <% end %>
+		<%= dilema.resultPrefix %> <%= dilema.result.abs %>
+		</span>
+	  </td>
       <td><%= link_to 'Delete', dilema_path(dilema),
         method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
@@ -39,6 +47,3 @@
     <%= f.submit "Add New Dilemma", class: 'btn' %>
   </div>
 <% end %>
-
-  <%= link_to 'Edit profile', edit_user_registration_path, class: "btn" %> 
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "btn"  %>

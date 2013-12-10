@@ -1,12 +1,5 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
-
-<% if user_signed_in? %>
-  Logged in as <strong><%= current_user.email %></strong>.<br><br>
-  <%= link_to 'Edit profile', edit_user_registration_path, class: "btn" %> 
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "btn"  %>
-  <%= link_to "My Dilemmas", dilemas_path, class: 'btn' %>
-<% else %>
-  <%= link_to "Sign up", new_user_registration_path, class: "btn"  %> 
-  <%= link_to "Login", new_user_session_path, class: "btn"  %>
-<% end %>
+<br>
+<h1 class="text-center">Welcome to Pro | Con !</h1>
+<p class="text-center lead">
+	This application helps you make difficult decisions by allowing you to create a pro/con list for each dilemma.  You can then add weighted pros and cons to the list, which will calculate overall if it is a pro or a con.
+	</p>

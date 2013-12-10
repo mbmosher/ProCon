@@ -1,4 +1,16 @@
-<h1><%= @dilema.decision %> <%= @dilema.resultPrefix %> <%= @dilema.result.abs %></h1>
+<br>
+
+<h1 class="text-center"><%= @dilema.decision %></h1>
+<h1 class="text-center">
+<% if @dilema.result > 0 %>
+    <span class="text-success">
+	<% else %>
+	<span class="text-error">
+<% end %>
+<%= @dilema.resultPrefix %> <%= @dilema.result.abs %>
+</h1></span>
+
+
 <br>
 <div class="row">
 	
@@ -32,4 +44,3 @@
 
 </div>
 </div>
-<%= link_to "Back", dilemas_path, class: 'btn' %>
